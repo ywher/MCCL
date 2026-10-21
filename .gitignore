@@ -5,3 +5,5 @@ pretrained/
 exp/
 validation/
 splits/road_preparation_manifest.json
+
+work_dirs/

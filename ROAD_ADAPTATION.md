@@ -15,7 +15,7 @@
 - 单GPU，目标有标注、无标注、源域GT分别batch=2，40,000次optimizer更新，seed=0。
 - 冻结通用DINOv3-B主干，训练ReIN和HRDA解码器；只加载通用VFM，不加载UDA或TC-ADA权重。
 - AdamW、lr=1e-4、decoder lr multiplier=10、warm-up=1500、poly power=1、crop=1024。目标预缩放1024×2048；GTA源域1440×2560，其余源域1024×2048。
-- Random和R-DKC逐字节复用现有UniMatchV2清单，默认`SPLIT_SOURCE=rdkc`。同一GPU批内roll得到另一图像作为CutMix donor，与现有UniMatchV2受控适配一致。
+- Random和R-DKC逐字节复用现有UniMatchV2清单，公平对照默认`SPLIT_SOURCE=random`。同一GPU批内roll得到另一图像作为CutMix donor，与现有UniMatchV2受控适配一致。
 - 16类目标使用`gtFine/train_16cls`及`val_16cls`标签，SYNTHIA使用`GT/LABELS_trainid_16cls`；其他使用19类trainIds。运行时检查标签范围，防止把19类标签直接用于16类模型。
 - 每10k步及最后一步验证，采用`eval/model_best_ious.csv`；保留独立的最终值、验证曲线和best iteration。
 
@@ -65,7 +65,7 @@ TRANSFER=gta2cityscapes CUDA_DEVICES=0 \
   bash scripts/train_semi_source_hrda.sh
 ```
 
-更换`TRANSFER`即可运行表中五项；设`SPLIT_SOURCE=random`切换选择方法。准备脚本仅创建本仓库数据/权重链接并复制split，不更改源数据、现有UniMatchV2或SSDA结果。清单与哈希在`splits/`对应路径及`splits/road_preparation_manifest.json`。
+更换`TRANSFER`即可运行表中五项；需要单独考察共同选样设置时可显式设`SPLIT_SOURCE=rdkc`；主公平对照不使用R-DKC。准备脚本仅创建本仓库数据/权重链接并复制split，不更改源数据、现有UniMatchV2或SSDA结果。清单与哈希在`splits/`对应路径及`splits/road_preparation_manifest.json`。
 
 结果目录：`exp/transfer/<transfer>/mccl_source/dinov3_base_rein_hrda/<selection>/<ratio>/`。检查点包含adapter/decoder、optimizer、迭代数、best iteration、原型库及split哈希；通用冻结VFM需保留。`RESUME=1`恢复同一配置和数据清单，拒绝静默覆盖已有训练。恢复会重建随机数据流，不保证与未中断训练逐位一致。
 
@@ -103,3 +103,9 @@ smoke只执行一次synthetic optimizer step，随后验证推理及模型/原�
 - MCCL官方clone基线：`2ca68f98ac64243ccc16e9397aa7aed2cf62be1f`。
 - 共同HRDA实现及初始五域配置参考本地UniMatchV2：`198a5aacc0e5af45a04960d389edfaabe72568d4`。
 - `road/road_vfm/`从已适配的共同实现复制，保留原版权与许可注释；`road/hrda_base.py`仅调整导入位置和类名。`adaptation_provenance.json`记录复制文件哈希。
+
+## 2026-10-21 正式对照排期
+
+主对照使用Random selection seed=0的固定清单，与UniMatchV2逐字节相同；training seed=0。五项分别为46/46/25/23/140张，均40k。`scripts/run_minimum_random_queue.sh`负责单GPU接续；显式前序标记完成且GPU连续60秒无compute进程、显存低于500MiB后启动，任何训练失败会停止本队列。队列不自动删除实验结果。
+
+本轮分配：EDEN/G3接续C2Mu→C2Map；HYY4/G0运行G2C；HYY/G2在E7 C2A Random完整结束后运行C2A；本地G0在已有E8两项完整结束后运行S2C。详细实时状态与ETA维护在SSDA的`paper/experiments/tmm_p0_reuse/current_training_status.md`与`MCCL_training_plan.md`，以实查状态为准。

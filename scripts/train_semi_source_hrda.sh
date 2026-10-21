@@ -3,7 +3,7 @@ set -euo pipefail
 ROOT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 cd "$ROOT_DIR"
 TRANSFER=${TRANSFER:?Set one of the five transfer names}
-SPLIT_SOURCE=${SPLIT_SOURCE:-rdkc}
+SPLIT_SOURCE=${SPLIT_SOURCE:-random}
 CUDA_DEVICES=${CUDA_DEVICES:?Set the GPU explicitly}
 if [[ "$CUDA_DEVICES" == *,* ]]; then
     echo "The controlled protocol uses one GPU" >&2
