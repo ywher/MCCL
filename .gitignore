@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+data/
+pretrained/
+exp/
+validation/
+splits/road_preparation_manifest.json

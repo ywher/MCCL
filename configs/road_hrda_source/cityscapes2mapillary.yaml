@@ -1,0 +1,43 @@
+dataset: mapillary
+data_root: data/mapillary
+nclass: 19
+crop_size: 1024
+pre_resize: [1024, 2048]
+source_pre_resize: [1024, 2048]
+
+epochs: 1
+total_iters: 40000
+batch_size: 2
+find_unused_parameters: false
+lr: 0.0001
+lr_multi: 10.0
+weight_decay: 0.05
+optimizer_eps: 0.00000001
+warmup_iters: 1500
+warmup_ratio: 0.000001
+lr_power: 1.0
+eval_interval_iters: 10000
+eval_patch_size: 16
+criterion:
+  name: OHEM
+  kwargs:
+    ignore_index: 255
+    thresh: 0.7
+    min_kept: 200000
+conf_thresh: 0.95
+
+model: hrda
+backbone: dinov3_base
+vfm_pretrained: pretrained/dinov3_base.pth
+
+# MCCL: preserve FKA and SAI alongside target consistency.
+feat_ali_weight: 0.1
+feat_nearest: 0.01
+prototype_conf_thresh: 0.95
+prototype_momentum: 0.99
+F-Drop: true
+F-Noise: true
+unsupervised_w: 0.01
+ramp_up: 1.0
+workers: 4
+seed: 0

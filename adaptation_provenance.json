@@ -1,0 +1,223 @@
+{
+  "mccl_base_commit": "2ca68f98ac64243ccc16e9397aa7aed2cf62be1f",
+  "unimatch_reference_commit": "198a5aacc0e5af45a04960d389edfaabe72568d4",
+  "vendored_files": {
+    "road/road_vfm/__init__.py": {
+      "source": "model/road_vfm/__init__.py",
+      "sha256": "d88ff587b43a29d8796f502f430388ad327675257d2266a1a2248c3fbbb94643"
+    },
+    "road/road_vfm/losses.py": {
+      "source": "model/road_vfm/losses.py",
+      "sha256": "cae8f815ade88735e7e4aa3c4bebda4a9cb8b1fd60710ddaa50dfa367f824c61"
+    },
+    "road/road_vfm/segmentors/__init__.py": {
+      "source": "model/road_vfm/segmentors/__init__.py",
+      "sha256": "7f91d74040e5ec45b884c42632bcf47396e395c56937a8856c28ebb45bd1aa6b"
+    },
+    "road/road_vfm/segmentors/hrda_encoder_decoder.py": {
+      "source": "model/road_vfm/segmentors/hrda_encoder_decoder.py",
+      "sha256": "6b113e76aa52fe84c9ab0534b8ba22cb47e91b769634e743fc8c02a337601112"
+    },
+    "road/road_vfm/segmentors/encoder_decoder.py": {
+      "source": "model/road_vfm/segmentors/encoder_decoder.py",
+      "sha256": "a801d276fe1e589477699d211a118868b7859b53e09e12a528b1708c7ea1e559"
+    },
+    "road/road_vfm/decode_heads/aspp_head.py": {
+      "source": "model/road_vfm/decode_heads/aspp_head.py",
+      "sha256": "42dd6ff5637545db7b91a54f023663f17b563dbfc29b83ba83255f9f980b2075"
+    },
+    "road/road_vfm/decode_heads/__init__.py": {
+      "source": "model/road_vfm/decode_heads/__init__.py",
+      "sha256": "05dabecb5bef3566561fb767c263236e058af41ece8df3c53c6827835742ef1e"
+    },
+    "road/road_vfm/decode_heads/hrda_head.py": {
+      "source": "model/road_vfm/decode_heads/hrda_head.py",
+      "sha256": "9e2f0a31bf614d629485aaa065b06d47560e79c8965f64ee5990f7d2a8dc1330"
+    },
+    "road/road_vfm/decode_heads/sep_aspp_head.py": {
+      "source": "model/road_vfm/decode_heads/sep_aspp_head.py",
+      "sha256": "2598c06a02bd2e635ab7b6fc7e3169df4309b70c6d4af49aa7a71d1a32972629"
+    },
+    "road/road_vfm/decode_heads/daformer_head.py": {
+      "source": "model/road_vfm/decode_heads/daformer_head.py",
+      "sha256": "bf834a8aae0525dea6f19a51239081f98ec509b58d436411458af23a8833672b"
+    },
+    "road/road_vfm/decode_heads/segformer_head.py": {
+      "source": "model/road_vfm/decode_heads/segformer_head.py",
+      "sha256": "255fffa2ae56bfa32029382df6690feef6b066664d880f57512937997a0bc611"
+    },
+    "road/road_vfm/backbones/__init__.py": {
+      "source": "model/road_vfm/backbones/__init__.py",
+      "sha256": "0cc23e8f0c28f2d29bb8427de583899640cef187e153fc55faf7b1383c8d12a3"
+    },
+    "road/road_vfm/backbones/peft.py": {
+      "source": "model/road_vfm/backbones/peft.py",
+      "sha256": "898080a1f86c3d5bc89dbcff557422df2b25881a38b583d9009effae28f4a794"
+    },
+    "road/road_vfm/backbones/reins.py": {
+      "source": "model/road_vfm/backbones/reins.py",
+      "sha256": "c8e6581011f832472565cca3f5eb92d2943f68f3dd0f2e047a5630b4ded76e72"
+    },
+    "road/road_vfm/backbones/dino_v3.py": {
+      "source": "model/road_vfm/backbones/dino_v3.py",
+      "sha256": "ebbb00a0d21103bbb69352848f0e1cc6397985126004095d7d77e4df017c947f"
+    },
+    "road/road_vfm/backbones/reins_dino_v3.py": {
+      "source": "model/road_vfm/backbones/reins_dino_v3.py",
+      "sha256": "d8a1e1dc2fde520699ae4dfd76f177562ec2bd307c1fc647d6324cfcaa74afeb"
+    },
+    "road/road_vfm/model_utils/token_masking.py": {
+      "source": "model/road_vfm/model_utils/token_masking.py",
+      "sha256": "774cbf919d57272c3a213e8293a03203ba9de27c45c7b7b3116f50ef5493e468"
+    },
+    "road/road_vfm/model_utils/cna_utils.py": {
+      "source": "model/road_vfm/model_utils/cna_utils.py",
+      "sha256": "934503dbbec18f21250e40c37046dc9ef98c3fca3efd93cea036727323602a03"
+    },
+    "road/road_vfm/model_utils/__init__.py": {
+      "source": "model/road_vfm/model_utils/__init__.py",
+      "sha256": "a5f742f5de55f4c2a4871efae3c50f5a5751461d37f701e8c7435274b71f8822"
+    },
+    "road/road_vfm/model_utils/cna.py": {
+      "source": "model/road_vfm/model_utils/cna.py",
+      "sha256": "713f636b68ce2553498b8211d958828be5b0d5b6724d6796cd43c529c3da618e"
+    },
+    "road/road_vfm/model_utils/funcs.py": {
+      "source": "model/road_vfm/model_utils/funcs.py",
+      "sha256": "0a035c391e9430c811b42781a7132a5faebcf2dff69c19a97c2ba2f7d47f15f8"
+    },
+    "road/road_vfm/backbones/dinov3_layers/dino_head.py": {
+      "source": "model/road_vfm/backbones/dinov3_layers/dino_head.py",
+      "sha256": "cd7a83f00ac449f962484bad0f2959be477781e57943508428d32ff88f41fe33"
+    },
+    "road/road_vfm/backbones/dinov3_layers/__init__.py": {
+      "source": "model/road_vfm/backbones/dinov3_layers/__init__.py",
+      "sha256": "0707ef3e9c20aff594c3817f64a2c8ff34a21bd3b55e7d03471969fd314dde20"
+    },
+    "road/road_vfm/backbones/dinov3_layers/layer_scale.py": {
+      "source": "model/road_vfm/backbones/dinov3_layers/layer_scale.py",
+      "sha256": "f9a10ee763a62136f9e814bfe2f2209c2cb501dfdc5573f858ab01ba9a69c23f"
+    },
+    "road/road_vfm/backbones/dinov3_layers/rope_position_encoding.py": {
+      "source": "model/road_vfm/backbones/dinov3_layers/rope_position_encoding.py",
+      "sha256": "af8ea35acb76d18ad4d53b844d5057bf01472a848375c51d70583a87f044efd1"
+    },
+    "road/road_vfm/backbones/dinov3_layers/attention.py": {
+      "source": "model/road_vfm/backbones/dinov3_layers/attention.py",
+      "sha256": "803451df45dd6aa681ee3f2eb7b15f37985125e7ef47f2bdec5ff3ddeb1db159"
+    },
+    "road/road_vfm/backbones/dinov3_layers/sparse_linear.py": {
+      "source": "model/road_vfm/backbones/dinov3_layers/sparse_linear.py",
+      "sha256": "9b5b0b5a874ee28a8937099b9e9def73f047c0abf7c8f545609c26bb6c990788"
+    },
+    "road/road_vfm/backbones/dinov3_layers/patch_embed.py": {
+      "source": "model/road_vfm/backbones/dinov3_layers/patch_embed.py",
+      "sha256": "c592c7262779c8e1789ed502aee81bdd55eba4607065f8d04ae95eea683d0ef1"
+    },
+    "road/road_vfm/backbones/dinov3_layers/fp8_linear.py": {
+      "source": "model/road_vfm/backbones/dinov3_layers/fp8_linear.py",
+      "sha256": "7d3bec6d4bc7737022aba685af75a29237fc2e6b18fd73aa5ed7be70b09548b6"
+    },
+    "road/road_vfm/backbones/dinov3_layers/ffn_layers.py": {
+      "source": "model/road_vfm/backbones/dinov3_layers/ffn_layers.py",
+      "sha256": "3be0ba4c7d0c9f73becc14616f803c2ce60b72286b24790c25395554ab5d221a"
+    },
+    "road/road_vfm/backbones/dinov3_layers/rms_norm.py": {
+      "source": "model/road_vfm/backbones/dinov3_layers/rms_norm.py",
+      "sha256": "8509ffc53f0bbe9e353a8b9e57ca2396795640b4ecc85140c27b17127c971869"
+    },
+    "road/road_vfm/backbones/dinov3_layers/block.py": {
+      "source": "model/road_vfm/backbones/dinov3_layers/block.py",
+      "sha256": "0123db123959744eb7969e39a46d7b8ae2cbc42ad1cfe59dbc8d8d95fc39dec5"
+    },
+    "road/road_vfm/backbones/dinov3_layers/utils/__init__.py": {
+      "source": "model/road_vfm/backbones/dinov3_layers/utils/__init__.py",
+      "sha256": "83e6ec1f0cea862f18ae111560e2eadf2fff1873e3fdd7d358dee8d32d0ade8d"
+    },
+    "road/road_vfm/backbones/dinov3_layers/utils/dtype.py": {
+      "source": "model/road_vfm/backbones/dinov3_layers/utils/dtype.py",
+      "sha256": "0c53f5cc155ea7e9899bc611493193fef9b985f23cb7d990401e22c363ac4419"
+    },
+    "road/road_vfm/backbones/dinov3_layers/utils/cluster.py": {
+      "source": "model/road_vfm/backbones/dinov3_layers/utils/cluster.py",
+      "sha256": "d1a003ad571ad0f69e1b1a495ada8d079068fbed27ec929cb6b12a4eb1afa82b"
+    },
+    "road/road_vfm/backbones/dinov3_layers/utils/utils.py": {
+      "source": "model/road_vfm/backbones/dinov3_layers/utils/utils.py",
+      "sha256": "d6fe7fe621b2ae3db89e3af588fbee0c78afe2130f4548dff87c94cbd734fe40"
+    },
+    "road/road_vfm/backbones/dinov3_layers/utils/custom_callable.py": {
+      "source": "model/road_vfm/backbones/dinov3_layers/utils/custom_callable.py",
+      "sha256": "4e3508a7e2fb419aae447e4a17049c5aef4603e42bce548ac3b317749c24d1c3"
+    }
+  },
+  "preserved_official_files": {
+    "prote.py": "c680051ee8660f94f26c2d290530d5b4a18aa9baf78959559a4b353a9c672896",
+    "requirements.txt": "c05376ff461c297b4d493a87ddc91b6d983a2b7aaac0fb20e03c84a15b1f10e3",
+    "Net.png": "21855d4b3d5ec4563254704bc9647ae7b61f3d1098faf1ab10ea3b375fbf36ff",
+    "Network.png": "b2ed883f74ef7e71ffc6fc3e2033501a989fbc5ac14f3d51987eeb4aa9ba4ac7",
+    "Table1.png": "d570d71e8fd40a05df2652dc7e656a762aa9b66dfaa14d0b395b62d23244b853",
+    "Net.pdf": "7a72b6aaaf1227a7d6a624fd7cb9fff5ed7be7a64516c110afc467c50e08d4db",
+    "LICENSE": "9e66289e2e82f555ed6f283f94a800f4fd578648c4b55e4037af63f38a21de72",
+    "Visual.png": "2fceca27507449cca310de982a37190db3a93d5b8110efbbb8179f0248a5396f",
+    "Table2.png": "e2a604a98154c726721f1b9e019b30f2b4dc1a167efc2a3972d79cfa0e605df4",
+    "fixmatch.py": "43f2750b1c7efe38b7108643a89dc9502f06cabfeed10f4b2edbb066c51ed48b",
+    "Table3.png": "b482b6d7bd08d52e6d7294bf3e1526ecae3d9ee36a3b3b9599c491b7e59d57b7",
+    "calculate.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "supervised.py": "590f58c5fb5ba64b129568bf85160ef6d53f1543e41f651d604d07687669492f",
+    "MCCL.py": "9aa93e2ce470bcc163ceccb893d38dd7386621d795482c627292cb650b9828fe",
+    "dataset/transform.py": "dc62b5b77ac894c1ded1176a5c14a099c78240dc76a8e6ae67ca547274bf3a2a",
+    "dataset/1.txt": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "dataset/semi.py": "47cd2ccf5e27e6a2bbf5ef44529657086b9606b1132526a73e6d183b109ebc12",
+    "util/ohem.py": "9c66a60b1939b51bbd82663ed1daf170d9cfa58108e1371b34ffd557834202a9",
+    "util/classes.py": "1d8ebe39de07e406a11ea89711b59af7bda0bbda3f3ae1e74474d0bdc8b94ea1",
+    "util/1.txt": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "util/consistency.py": "764d1f02c87ed53868ea7a48e6f9bc53292295db98d3ec38cd08f1bcf8d7df95",
+    "util/paltte.py": "c7bd88538953608188201483c52394d36d3901f113eb4c434686d353acc34ad1",
+    "util/dist_helper.py": "97eb1d0eaa639c2599813c3b5578cb39d9d415efe99aea1ff7cf6eab1ea8e9c8",
+    "util/ramps.py": "bc39be297cd1d398804c7a40bbdcb4ac3061d70b24102b4b93ac1b42e7afb9e3",
+    "util/utils.py": "4c6a4d0b5f7d73a8ffca5357ba2bec54f528f1d2341a4a9593ed0600bfefa88d",
+    "util/contrast_loss.py": "cccc5cc3f96c536b2a6fdc68210b749c534475f5802811fd757d26aeddbe8058",
+    "configs/cityscapes.yaml": "4522b2614eaf1aa31a3a9026eb691afd988f1f254901c81f250959c7dd33009e",
+    "configs/coco.yaml": "fcca90ea048b72438fd0f4af5b8a0ee473cd85ce6eaa8b109d302587f1b607cd",
+    "configs/pascal.yaml": "5c21035eb8bc40b58f7bfdb3fb78ac30e7d4553dfd84f895e10ff5a5af57b819",
+    "configs/1.txt": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "splits/pascal/1.txt": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "splits/pascal/366/unlabeled.txt": "591c593546d1dbb65bd4d08ae99fabc1e9958d614c8079c8961422b8b7df7433",
+    "splits/pascal/366/labeled.txt": "74f6bd1e459a8b46fc204529d70b603769f8a45aef4553df8a5c04b5698e77b7",
+    "splits/pascal/366/1.txt": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "splits/pascal/183/unlabeled.txt": "39aa3fd2997799c57c7d68d1ab342e2ebf53224ab10c1766a9fcd1554afbfd6a",
+    "splits/pascal/183/labeled.txt": "de3f4680391cb15324402dae17ac0919933d0d9004c11a641c924f3f67147f9f",
+    "splits/pascal/183/1.txt": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "splits/pascal/732/unlabeled.txt": "8ddf828ec616b551447dc402c2c53eb7d0044697a0b6bacd6190ee843ffbf340",
+    "splits/pascal/732/labeled.txt": "02c8ec5b62e27364f5bc91eb95bccf54debaa721e9d31c50c07507aea258fd0f",
+    "splits/pascal/732/1.txt": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "splits/pascal/1464/unlabeled.txt": "3ba331d08fee0751486a8be3f9f269f9efc09faa82a32a703bbb7deda4d66544",
+    "splits/pascal/1464/labeled.txt": "b20486876df309c57c8230e957b2957fff5392ff5cb11f225e8453ed6c50ba3e",
+    "splits/pascal/1464/1.txt": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "splits/pascal/1_4/1.txt": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "splits/cityscapes/1_16/unlabeled.txt": "7f18e2aefb5e88598910e291a935117daaeef51c6828edeb62f8a6c882be0a79",
+    "splits/cityscapes/1_16/labeled.txt": "64195914dce1231133c7dc611fece213bc3a87fe4e0b73fbd96add7dfa8a2f46",
+    "splits/cityscapes/1_16/1.txt": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "splits/cityscapes/1_2/unlabeled.txt": "23d0efaa43a65608b25eb078ed058c53979957e44407d787e3abdda9a795d289",
+    "splits/cityscapes/1_2/labeled.txt": "90d8e29d4d182c3b3def3d1fac02e454868c4ca632f73696bb521aa05e937ee4",
+    "splits/cityscapes/1_2/1.txt": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "splits/cityscapes/1_8/unlabeled.txt": "5d7d33e39a8bda908e12d7f33ecb3299f93a8596fbe3c5e0cc1f2d3f5d358459",
+    "splits/cityscapes/1_8/labeled.txt": "97291dfc509a8c90ee94e1c5fd1f7668c21205b995f53b963ac133f0ed96ee8e",
+    "splits/cityscapes/1_8/1.txt": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "splits/cityscapes/1_4/unlabeled.txt": "6fc53258ed2e40f72f4a22b6e20d60a789168fdf6b860033f826e8bee3900e9b",
+    "splits/cityscapes/1_4/labeled.txt": "8edd24ae817eed7b49d0a06c95b7bfaf769002c98387e4edeab5e221ab7791c3",
+    "splits/cityscapes/1_4/1.txt": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "model/semseg/1.txt": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "model/semseg/deeplabv3plus.py": "832c4f9743c2d2f911c6971e577fadc6a00f76f2b09115e9db5609a259566584",
+    "model/backbone/xception.py": "3108bbc5d32241d8eb8de5e24fe90dcfba8ed7ca217b10f09ebf06f3a318df4f",
+    "model/backbone/resnet.py": "8219763b3df5c803602952567422b78d122b44ed4c292c4d636cade618e81c98",
+    "model/backbone/1.txt": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+  },
+  "hrda_base": {
+    "source": "model/semseg/hrda.py",
+    "source_sha256": "d75b7b2ffcbefd85c85fca6d9b0103bceaa929c3caaf033032be98124769e67a",
+    "adapted_sha256": "4be5638feec193df6171ec9d33be666b73cd24495754367b245820f959faed8a",
+    "changes": "Import path and class name only"
+  }
+}

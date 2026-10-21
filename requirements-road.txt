@@ -1,0 +1,6 @@
+# Additional entry point: mccl_source.py (the original requirements.txt is unchanged).
+torch>=2.2
+torchvision>=0.17
+numpy
+Pillow
+PyYAML>=6
