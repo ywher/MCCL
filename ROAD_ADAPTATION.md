@@ -108,4 +108,4 @@ smoke只执行一次synthetic optimizer step，随后验证推理及模型/原�
 
 主对照使用Random selection seed=0的固定清单，与UniMatchV2逐字节相同；training seed=0。五项分别为46/46/25/23/140张，均40k。`scripts/run_minimum_random_queue.sh`负责单GPU接续；显式前序标记完成且GPU连续60秒无compute进程、显存低于500MiB后启动，任何训练失败会停止本队列。队列不自动删除实验结果。
 
-本轮分配：EDEN/G3接续C2Mu→C2Map；HYY4/G0运行G2C；HYY/G2在E7 C2A Random完整结束后运行C2A；本地G0在已有E8两项完整结束后运行S2C。详细实时状态与ETA维护在SSDA的`paper/experiments/tmm_p0_reuse/current_training_status.md`与`MCCL_training_plan.md`，以实查状态为准。
+本轮分配（2026-10-21更新）：EDEN/G3优先运行C2Map；C2Mu改到用户的新HYY2，等待用户上传数据集后再部署。Eden上约900步的C2Mu已按用户要求中断并删除目录与日志，没有checkpoint或最终结果。HYY4/G0在精确benchmark标签及B型VFM权重完成SHA-256核验后运行G2C；HYY/G2在E7 C2A Random完整结束后运行C2A；本地G0在已有E8两项完整结束后运行S2C。详细实时状态与ETA维护在SSDA的`paper/experiments/tmm_p0_reuse/current_training_status.md`与`MCCL_training_plan.md`，以实查状态为准。
